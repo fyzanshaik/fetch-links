@@ -1,0 +1,12 @@
+{
+  "name": "YouTube Playlist Link Fetcher",
+  "short_name": "Playlist Links",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0E6ED",
+  "theme_color": "#D43A87",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "64x64", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
+

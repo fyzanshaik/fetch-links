@@ -33,9 +33,9 @@
   --sidebar-accent-foreground: oklch(0.3211 0 0);
   --sidebar-border: oklch(0.9464 0.0327 307.1745);
   --sidebar-ring: oklch(0.6559 0.2118 354.3084);
-  --font-sans: Poppins, sans-serif;
+  --font-sans: var(--font-poppins), Poppins, Inter, sans-serif;
   --font-serif: Lora, serif;
-  --font-mono: Fira Code, monospace;
+  --font-mono: var(--font-space-mono), "Google Sans Code", Space Mono, monospace;
   --radius: 0.4rem;
   --shadow-2xs: 3px 3px 0px 0px hsl(325.7800 58.1800% 56.8600% / 0.50);
   --shadow-xs: 3px 3px 0px 0px hsl(325.7800 58.1800% 56.8600% / 0.50);
@@ -82,9 +82,9 @@
   --sidebar-accent-foreground: oklch(0.2781 0.0296 256.8480);
   --sidebar-border: oklch(0.3729 0.0306 259.7328);
   --sidebar-ring: oklch(0.6559 0.2118 354.3084);
-  --font-sans: Poppins, sans-serif;
+  --font-sans: var(--font-poppins), Poppins, Inter, sans-serif;
   --font-serif: Lora, serif;
-  --font-mono: Fira Code, monospace;
+  --font-mono: var(--font-space-mono), "Google Sans Code", Space Mono, monospace;
   --radius: 0.4rem;
   --shadow-2xs: 3px 3px 0px 0px hsl(206.1538 28.0576% 27.2549% / 0.50);
   --shadow-xs: 3px 3px 0px 0px hsl(206.1538 28.0576% 27.2549% / 0.50);
@@ -154,3 +154,35 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Poppins weight utility classes */
+.poppins-thin { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 100; font-style: normal; }
+.poppins-extralight { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 200; font-style: normal; }
+.poppins-light { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 300; font-style: normal; }
+.poppins-regular { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 400; font-style: normal; }
+.poppins-medium { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 500; font-style: normal; }
+.poppins-semibold { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 600; font-style: normal; }
+.poppins-bold { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 700; font-style: normal; }
+.poppins-extrabold { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 800; font-style: normal; }
+.poppins-black { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 900; font-style: normal; }
+.poppins-thin-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 100; font-style: italic; }
+.poppins-extralight-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 200; font-style: italic; }
+.poppins-light-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 300; font-style: italic; }
+.poppins-regular-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 400; font-style: italic; }
+.poppins-medium-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 500; font-style: italic; }
+.poppins-semibold-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 600; font-style: italic; }
+.poppins-bold-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 700; font-style: italic; }
+.poppins-extrabold-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 800; font-style: italic; }
+.poppins-black-italic { font-family: "Poppins", var(--font-sans), sans-serif; font-weight: 900; font-style: italic; }
+
+/* Space Mono helpers */
+.space-mono-regular { font-family: "Space Mono", var(--font-mono), monospace; font-weight: 400; font-style: normal; }
+.space-mono-bold { font-family: "Space Mono", var(--font-mono), monospace; font-weight: 700; font-style: normal; }
+.space-mono-regular-italic { font-family: "Space Mono", var(--font-mono), monospace; font-weight: 400; font-style: italic; }
+.space-mono-bold-italic { font-family: "Space Mono", var(--font-mono), monospace; font-weight: 700; font-style: italic; }
+
+/* Inter helpers (variable) */
+.inter { font-family: "Inter", var(--font-sans), sans-serif; font-optical-sizing: auto; font-style: normal; }
+
+/* Google Sans Code (variable) */
+.google-sans-code { font-family: "Google Sans Code", var(--font-mono), monospace; font-optical-sizing: auto; font-style: normal; }
